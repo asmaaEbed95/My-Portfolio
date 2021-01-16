@@ -1,0 +1,671 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--===== Meta Tag =====-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Asmaa Ebed - Personal Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="business, agency, blog, cv, creative, html, one page, personal, portfolio, resume, responsive, bootstrap, photography, designer, developer">
+    <meta name="author" content="root">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.pagepiling.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/flaticon.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/color.css" id="color-change">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
+    <title>Asmaa Ebed - Personal Portfolio</title>
+
+</head>
+
+<body id="top" class="page-load">
+    <!--	Preloader
+	==================================================-->
+    <div class="preloader">
+        <div class="lds-css ng-scope">
+            <div class="lds-spinner" style="width:100%;height:100%">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- Color Settings Start
+	==================================================-->
+    <div class="color-panel">
+        <div class="on-panel color_white bg_primary">
+            <div class="text-center icon-spinner">
+                <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+            </div>
+        </div>
+        <div class="panel-box">
+            <span class="panel-title">Theme Colors</span>
+            <ul class="color-box">
+                <li class="rounded-circle default" data-name="default" data-path="css/color.css" data-img="images/about/01.png"></li>
+                <li class="rounded-circle color_2" data-name="color_2" data-path="css/color/color-2.css" data-img="images/about/02.png"></li>
+                <li class="rounded-circle color_3" data-name="color_3" data-path="css/color/color-3.css" data-img="images/about/03.png"></li>
+                <li class="rounded-circle color_4" data-name="color_4" data-path="css/color/color-4.css" data-img="images/about/04.png"></li>
+                <li class="rounded-circle color_5" data-name="color_5" data-path="css/color/color-5.css" data-img="images/about/05.png"></li>
+                <li class="rounded-circle color_6" data-name="color_6" data-path="css/color/color-6.css" data-img="images/about/06.png"></li>
+                <li class="rounded-circle color_7" data-name="color_7" data-path="css/color/color-7.css" data-img="images/about/07.png"></li>
+            </ul>
+        </div>
+    </div>
+    <!--  Color Settings End
+	==============================================-->
+    <!--	Start Sidebar
+	==================================================-->
+    <div id="mysidenav" class="sidenav color_default">
+        <a class="closebtn" style="cursor:pointer" onclick="closeNav()"><i class="flaticon-close-button"></i></a>
+        <img class="nav-logo" src="images/logo/29.png" alt="image">
+        <ul id="menu">
+            <li data-menuanchor="page1" class="active"><a href="#page1">Home</a></li>
+            <li data-menuanchor="page2"><a href="#page2">About</a></li>
+            <li data-menuanchor="page3"><a href="#page3">Resume</a></li>
+            <li data-menuanchor="page4"><a href="#page4">Services</a></li>
+            <li data-menuanchor="page5"><a href="#page5">Portfolio</a></li>
+            <!-- <li data-menuanchor="page6"><a href="#page6">Testimonial</a></li> -->
+            <li data-menuanchor="page7"><a href="#page7">Contact</a></li>
+        </ul>
+    </div>
+    <div class="sidebar bg_primary">
+        <div class="logo text-center">
+            <a href="#page1"><img class="nav-logo" src="images/logo/29.png" alt="logo"></a>
+        </div>
+        <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="socal_media mt_60">
+            <ul>
+                <li><a href="https://www.facebook.com/asmaa.a.ebed/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/asmaa_ebed95"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/asmaaEbed95"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/asmaa-ebed-83229b12b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/asmaa_ebed/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contact_massage bg_primary">
+        <a href="#page7"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    </div>
+    <!--	End Sidebar
+	=======================================================-->
+    <div id="pagepiling">
+        <!--    Start Main Banner 
+		==================================================-->
+        <div class="pagegilling-mani-banner section bg_white">
+            <div id="particles-js" class="banner_image background13 overlay_one">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-md-12 col-lg-12 home-content text-left">
+                            <div class="mainbanner_content">
+                                <span class="pb_5 banner_title color_white">I Am Asmaa A. Ebed</span>
+                                <h1 class="cd-headline clip is-full-width text-uppercase">
+                                    <span class="color_white">I am a</span>
+                                    <span class="cd-words-wrapper color_default">
+		                                <b class="is-visible">Front End Developer.</b>
+		                                <b>Back End Developer.</b>
+		                                <b>Freelancer.</b>
+		                            </span>
+                                </h1>
+                                <p class="fading color_white mb_30">To know more about me just download my attached CV below or you can just continue surfing my portofolio</p>
+                                <a class="btn btn-default" href="Asmaa Alaa.pdf">Download CV</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--	End Main Banner 
+		==================================================-->
+        <!--	Start About
+		===================================================-->
+        <div id="about" class="section bg_white pp-scrollable">
+            <div class="container-fluid pl_120">
+                <div class="row">
+                    <div class="about2">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="row">
+                                <div class="col-md-5 col-lg-5">
+                                    <div><img src="images/about/01.png" id="img-change" alt="image"></div>
+                                </div>
+                                <div class="col-md-7 col-lg-7">
+                                    <div class="about_myself pb_60">
+                                        <!--	Start Title
+	    								================================-->
+                                        <div class="main_title my_60">
+                                            <h2 class="title color_primary">About Me</h2>
+                                            <p class="mt_15">I'm a passionate 25 year old full stack web developer with 3 years of experience in Front-End development and 1 year in Back-End development.</p>
+                                        </div>
+                                        <!--	End Title
+	    								================================-->
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="myself color_secondery">
+                                                    <p>As a front end developer, i have experience with HTML5, CSS3, Bootstrap, Jquery, ECMA Script, Vanilla javascript and also javascript framework (ember and angular 10).</p>
+
+                                                    <p class="pt_30">As a back end developer, i have experience with ASP.NET MVC, ASP.NET CORE 2, ASP.NET CORE 3, WEB API, Entity Framework, Sql Server Database, Razor Pages.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6">
+                                                <div class="personal_info">
+                                                    <ul>
+                                                        <li><span class="color_secondery">Name :</span> Asmaa A. Ebed</li>
+                                                        <li><span class="color_secondery">Date Of Birth :</span> 15 April 1995</li>
+                                                        <li><span class="color_secondery">Email :</span> asmaaebed95@gmail.com</li>
+                                                        <li><span class="color_secondery">LinkedIn :</span> www.linkedin.com/in/asmaa-ebed-83229b12b</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--	End About
+		===================================================-->
+        <!--	Start Education and Experience
+		===================================================-->
+        <div id="education" class="section bg_white pp-scrollable">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="education_experience ml_105 pl_120">
+                            <!--	Start Title
+	    					================================-->
+                            <div class="main_title my_60">
+                                <h2 class="title color_primary">Education & Experience</h2>
+                                <p class="mt_15">My journey all the way down from College to the work field.</p>
+                            </div>
+                            <!--	End Title
+	    					================================-->
+                            <ul class="nav nav-pills pb_60" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="btn btn-default active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Experience</a>
+                                </li>
+                                <li class="nav-item mx_10">
+                                    <a class="btn btn-default" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Education</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="company pb_60">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-4">
+                                                <h1 class="color_lightgray font-weight-bold mt_lg_30">01.</h1>
+                                                <h4 class="color_primary font-weight-bold">Work in company “Techno Future”</h4>
+                                                <span class="color_secondery">2017 -2019</span>
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <p>My responsibility was on creating and developing a fully functional programs to make a robot do a specific tasks to win the First Competitions. Program arduino and foton module to use it in clouding application
+                                                    by IFTTT. Program the VEX robot with C++ language.
+                                                </p>
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <div class="mt_lg_30"><img src="images/education/01.png" alt="image"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="company pb_60">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-4">
+                                                <p>Design and Integrate full function control panels to manage all the client behavioralso the products' selling.</p>
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <div class="mt_lg_30"><img src="images/education/02.png" alt="image"></div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <h1 class="color_lightgray font-weight-bold mt_lg_30">02.</h1>
+                                                <h4 class="color_primary font-weight-bold">Work in company “Easy Index” part-time</h4>
+                                                <span class="color_secondery">2019 - 2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="company pb_60">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-4">
+                                                <img src="images/education/03.png" alt="image">
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <h1 class="color_lightgray font-weight-bold mt_lg_30">03.</h1>
+                                                <h4 class="color_primary font-weight-bold">Work in company “Online Technical Services”</h4>
+                                                <span class="color_secondery">2019 - Present</span>
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <p>developing software solutions and providing Software as a Service (SaaS) products to serve and support the shipping industry by using the portfolio of Microsoft platforms/technologies.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                    <div class="company pb_60">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-4">
+                                                <img src="images/education/04.jpg" alt="image">
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <p class="mt_lg_30">Gradueated from faculty of science alexandria university, computer cience department with 3.2 CGPA.</p>
+
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <h1 class="color_lightgray font-weight-bold mt_lg_30">01.</h1>
+                                                <h4 class="color_primary font-weight-bold">Faculty of Science Alexandria University</h4>
+                                                <span class="color_secondery">2013 - 2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="company pb_60">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-4">
+                                                <h1 class="color_lightgray font-weight-bold mt_lg_30">02.</h1>
+                                                <h4 class="color_primary font-weight-bold">Front-End Web Developer Nanodegree Program</h4>
+                                                <span class="color_secondery">2017 - 2018</span>
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <div class="mt_lg_30"><img src="images/education/1.png" alt="image"></div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-4">
+                                                <p class="mt_lg_30">Build and develop a variety of websites and applications. Graduates of this Nanodegree program will be able to construct responsive websites using CSS, Flexbox and CSS Grid, develop interactive websites
+                                                    and UI (User Interface) applications using JavaScript and HTML, and connect a web application to backend server data using JavaScript. Students will also build competency automating application build
+                                                    and deployment using Webpack and improving offline performance of websites using Service Worker.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--	End Education and Experience
+		===================================================-->
+        <!--	Start Services
+		===================================================-->
+        <div id="services" class="section bg_white pp-scrollable md_pl_80">
+            <div class="container">
+                <div class="services my_60">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <!--	Start Title
+		    				================================-->
+                            <div class="main_title pb_60">
+                                <h2 class="title color_primary">Services</h2>
+                                <p class="mt_15">Providing fully functionality Web Applicaitons and Designs.</p>
+                            </div>
+                            <!--	End Title
+		    				================================-->
+                        </div>
+                    </div>
+                    <div class="services_item owl-carousel">
+                        <div class="service_one text-center p_30">
+                            <div class="srvicon bg_default color_white mx-auto mb_20"><span class="flaticon-website-design-symbol"></span></div>
+                            <h3 class="font-weight-bold color_primary">Web Design</h3>
+                            <p>Design fully Responsive Design with modern technologies and animations by Bootstrap, CSS animations, SVGs, JavaScript Animation.</p>
+                        </div>
+                        <div class="service_one text-center p_30">
+                            <div class="srvicon bg_default color_white mx-auto mb_20"><span class="flaticon-programming"></span></div>
+                            <h3 class="font-weight-bold color_primary">Web Development</h3>
+                            <p>Develop fully function Web Application by using Asp.net MVC, Asp.net Core, Razor Pages, Entity Framework, Identity, SQL Server Database.</p>
+                        </div>
+                        <div class="service_one text-center p_30">
+                            <div class="srvicon bg_default color_white mx-auto mb_20"><span class="flaticon-internet"></span></div>
+                            <h3 class="font-weight-bold color_primary">Branding</h3>
+                            <p>Designing your brand for your business to break through the clutter and grab your customer’s attention, It’s what transforms first-time buyers into lifetime customers.
+                            </p>
+                        </div>
+                        <div class="service_one text-center p_30">
+                            <div class="srvicon bg_default color_white mx-auto mb_20"><span class="flaticon-editor"></span></div>
+                            <h3 class="font-weight-bold color_primary">Documenting</h3>
+                            <p>Document your Code to meet your Business logic, Like:Include a README file, API documentation What a function do and it's arguments, What it returns, etc..
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--	End Services
+		===================================================-->
+        <!--	Start Portfolio
+		===================================================-->
+        <div id="portfolio" class="section bg_white pp-scrollable md_pl_80">
+            <div class="container">
+                <div class="portfolio2 my_60">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <!--	Start Title
+		    				================================-->
+                            <div class="main_title pb_60">
+                                <h2 class="title color_primary">Portfolio</h2>
+                            </div>
+                            <!--	End Title
+		    				================================-->
+                        </div>
+                        <div class="col-md-12 col-lg-12">
+                            <div class="my_portfolio" id="tab-panel">
+                                <!--Filter-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="filters mb_30 w-100">
+                                            <ul class="filter-tabs d-inline-block">
+                                                <li class="active filter" data-role="button" data-filter="all">All</li>
+                                                <li class="filter" data-role="button" data-filter=".design">Web Design</li>
+                                                <li class="filter" data-role="button" data-filter=".development">Web Development</li>
+                                                <li class="filter" data-role="button" data-filter=".branding">Branding</li>
+                                                <li class="filter" data-role="button" data-filter=".documenting">Documenting</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="filter-list">
+                                    <div class="portfolio-items">
+                                        <div class="row">
+                                            <div class="column mix mix_all graphic development documenting mb_30 col-md-4 col-lg-4">
+                                                <div class="default-portfolio-item">
+                                                    <a href="images/portfolio/01.jpg" data-fancybox="gallery">
+                                                        <img src="images/portfolio/01.jpg" alt="image">
+                                                        <div class="overlay-box">
+                                                            <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                            <div class="tag">
+                                                                <ul>
+                                                                    <li>Web Development,</li>
+                                                                    <li>wordpress</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="column mix mix_all graphic branding mb_30 col-md-4 col-lg-4">
+                                                <div class="default-portfolio-item">
+                                                    <a href="images/portfolio/02.jpg" data-fancybox="gallery">
+                                                        <img src="images/portfolio/02.jpg" alt="image">
+                                                        <div class="overlay-box">
+                                                            <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                            <div class="tag">
+                                                                <ul>
+                                                                    <li>Branding,</li>
+                                                                    <li>Wordpress</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="column mix mix_all design documenting development mb_30 col-md-4 col-lg-4">
+                                                <div class="default-portfolio-item">
+                                                    <a href="images/portfolio/03.jpg" data-fancybox="gallery">
+                                                        <img src="images/portfolio/03.jpg" alt="image">
+                                                        <div class="overlay-box">
+                                                            <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                            <div class="tag">
+                                                                <ul>
+                                                                    <li>Web Design,</li>
+                                                                    <li>Web Development</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="column mix mix_all graphic documenting branding mb_30 col-md-4 col-lg-4">
+                                                <div class="default-portfolio-item">
+                                                    <a href="images/portfolio/04.jpg" data-fancybox="gallery">
+                                                        <img src="images/portfolio/04.jpg" alt="image">
+                                                        <div class="overlay-box">
+                                                            <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                            <div class="tag">
+                                                                <ul>
+                                                                    <li>Branding,</li>
+                                                                    <li>wordpress</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="column mix mix_all graphic design branding mb_30 col-md-4 col-lg-4">
+                                                <div class="default-portfolio-item">
+                                                    <a href="images/portfolio/05.jpg" data-fancybox="gallery">
+                                                        <img src="images/portfolio/05.jpg" alt="image">
+                                                        <div class="overlay-box">
+                                                            <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                            <div class="tag">
+                                                                <ul>
+                                                                    <li>Web Design,</li>
+                                                                    <li>wordpress</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="column mix mix_all development documenting design mb_30 col-md-4 col-lg-4">
+                                                <div class="default-portfolio-item">
+                                                    <a href="images/portfolio/06.jpg" data-fancybox="gallery">
+                                                        <img src="images/portfolio/06.jpg" alt="image">
+                                                        <div class="overlay-box">
+                                                            <span><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                                            <div class="tag">
+                                                                <ul>
+                                                                    <li>Web Design,</li>
+                                                                    <li>Web Development</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--	End Portfolio
+		===================================================-->
+        <!--	Start Testimonial
+		===================================================-->
+        <!-- <div id="blog" class="section bg_white pp-scrollable md_pl_80">
+            <div class="container">
+                <div class="testimonial my_60">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12"> -->
+        <!--	Start Title
+		    				================================-->
+        <!-- <div class="main_title pb_60">
+                                <h2 class="title color_primary">Testimonial</h2>
+                                <p class="mt_15">Interdum a etiam sagittis vehicula porta. Massa felis eros quam blandit nulla dolor habitant.</p>
+                            </div> -->
+        <!--	End Title
+		    				================================-->
+        <!-- </div>
+                        <div class="col-md-12 col-lg-12">
+                            <div class="testimonial_item owl-carousel wow animated slideInUp">
+                                <div class="member_feedback p_30">
+                                    <div class="client_img"><img src="images/testimonial/01.jpg" alt="image"></div>
+                                    <div class="star d-inline-block mt_30 color_default">
+                                        <ul>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="color_primary mb_15">Aisha Lexi</h5>
+                                    <p>Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.</p>
+                                </div>
+                                <div class="member_feedback p_30">
+                                    <div class="client_img"><img src="images/testimonial/02.jpg" alt="image"></div>
+                                    <div class="star d-inline-block mt_30 color_default">
+                                        <ul>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="color_primary mb_15">Kiara Paige</h5>
+                                    <p>Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.</p>
+                                </div>
+                                <div class="member_feedback p_30">
+                                    <div class="client_img"><img src="images/testimonial/03.jpg" alt="image"></div>
+                                    <div class="star d-inline-block mt_30 color_default">
+                                        <ul>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="color_primary mb_15">Lucas Noah</h5>
+                                    <p>Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.</p>
+                                </div>
+                                <div class="member_feedback p_30">
+                                    <div class="client_img"><img src="images/testimonial/04.jpg" alt="image"></div>
+                                    <div class="star d-inline-block mt_30 color_default">
+                                        <ul>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                            <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="color_primary mb_15">Grace Ruby</h5>
+                                    <p>Sem duis platea erat feugiat vivamus nascetur sapien tortor. Sollic dictum ultric. Aliquam inceptos bibendum fringilla sodales. Molest lacin urna per aenean commodo sociosqu.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!--	End Testimonial
+		===================================================-->
+        <!--	Start Contact
+		===================================================-->
+        <div id="contact" class="section bg_white pp-scrollable">
+            <div class="container">
+                <div class="contact pt_60 md_pl_80">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <!--	Start Title
+		    				================================-->
+                            <div class="main_title pb_60">
+                                <h2 class="title color_primary">Contact</h2>
+                                <p class="mt_15">Feel free to contact me if you got stuck with your code.</p>
+                            </div>
+                            <!--	End Title
+		    				================================-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-lg-4">
+                            <div class="contact_info">
+                                <ul>
+                                    <li>
+                                        <div class="contact_icon float-left"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                                        <div class="contact_text">
+                                            <h6 class="font-weight-bold color_primary">EMAIL</h6>
+                                            <span class="color_secondery">asmaaebed95@gmail.com</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-lg-8">
+                            <form class="form contact_message pb_60" id="contact-form" action="email.php" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="name" placeholder="Your Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" type="email" name="email" placeholder="Email Address">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" name="subject" placeholder="Subject">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" rows="7" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="form-group">
+                                            <input class="btn btn-default" id="send" value="Send Massage" type="submit">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="error-handel">
+                                            <div id="success">Your email sent Successfully, Thank you.</div>
+                                            <div id="error"> Error occurred while sending email. Please try again later.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--	End Contact
+		===================================================-->
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/jquery.pagepiling.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/particles-json.js"></script>
+    <script>
+        //	Pagepiling js
+        //=====================================================
+        $(document).ready(function() {
+            $('#pagepiling').pagepiling({
+                menu: '#menu',
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5',
+                    // 'page6',
+                    'page7'
+                ],
+                loopTop: true,
+                loopBottom: true
+            });
+        });
+    </script>
+</body>
+
+</html>
