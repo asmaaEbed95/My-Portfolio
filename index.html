@@ -596,21 +596,23 @@
                             </div>
                         </div>
                         <div class="col-md-7 col-lg-8">
-                            <form class="form contact_message pb_60" id="contact-form" action="email.php" method="post">
+                            <form class="form contact_message pb_60" id="contact-form">
+                                <input type="hidden" name="contact_number">
+
                                 <div class="row">
                                     <div class="col-md-6 col-lg-6">
                                         <div class="form-group">
-                                            <input class="form-control" type="text" name="name" placeholder="Your Name">
+                                            <input class="form-control" type="text" name="from_name" placeholder="Your Name" {{from_name}}>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-lg-6">
                                         <div class="form-group">
-                                            <input class="form-control" type="email" name="email" placeholder="Email Address">
+                                            <input class="form-control" type="email" name="email" placeholder="Email Address" {{email}}>
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-lg-12">
                                         <div class="form-group">
-                                            <input class="form-control" type="text" name="subject" placeholder="Subject">
+                                            <input class="form-control" type="text" name="subject" placeholder="Subject" {{subject}}>
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-lg-12">
@@ -620,7 +622,7 @@
                                     </div>
                                     <div class="col-md-12 col-lg-12">
                                         <div class="form-group">
-                                            <input class="btn btn-default" id="send" value="Send Massage" type="submit" name="submit">
+                                            <input class="btn btn-default" id="send" value="Send Massage" type="submit">
                                         </div>
                                     </div>
                                     <div class="col-md-12 col-lg-12">
@@ -647,6 +649,37 @@
     <script src="js/particles.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/particles-json.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_C6L1w8ogW3FntYk8Sx7cF');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+
+                emailjs.sendForm('service_90duqki', 'template_nnctijo', "#contact-form")
+                    .then(function(response) {
+                            $("#success").slideDown("slow");
+                            setTimeout(function() {
+                                $("#success").slideUp("slow");
+                            }, 5000);
+                        },
+                        function(err) {
+                            $("#error").slideDown("slow");
+                            setTimeout(function() {
+                                $("#error").slideUp("slow");
+                            }, 5000);
+                        });
+            });
+        }
+    </script>
     <script>
         //	Pagepiling js
         //=====================================================

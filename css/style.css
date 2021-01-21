@@ -1295,6 +1295,10 @@ ul#menu li a {
     color: #31bb15
 }
 
+#error {
+    color: red;
+}
+
 .contact_message .error {
     font-weight: 300;
     font-size: 13px;
