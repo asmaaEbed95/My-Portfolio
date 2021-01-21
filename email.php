@@ -28,9 +28,8 @@ $email_body = "You have received a new message from the user $name.\n".
     
 $to = "asmaaebed95@gmail.com";//<== update the email address
 $headers = "From: $email_from \r\n";
-$headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
-mail($to,$email_subject,$email_body,$headers);
+mail($to,$subject,$email_body,$headers);
 //done. redirect to thank-you page.
 header('Location: index.html');
 
